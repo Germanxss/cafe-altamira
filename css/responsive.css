@@ -1,0 +1,156 @@
+/* =========================================================
+   Café Altamira - Diseño responsivo
+   Puntos de quiebre (mobile-first, con min-width):
+     - 480px  : teléfonos grandes
+     - 768px  : tabletas
+     - 1024px : computadores portátiles y de escritorio
+     - 1280px : pantallas amplias
+   Se incluye además un ajuste para pantallas muy pequeñas
+   (max-width: 359px).
+   ========================================================= */
+
+/* ---------- Teléfonos muy pequeños ---------- */
+@media (max-width: 359px) {
+  .container { padding-inline: 1rem; }
+  .brand-text small { display: none; }
+  .brand-text strong { font-size: 1.05rem; }
+  .hero-datos { gap: 1rem; }
+  .filtro { padding: 0.5rem 0.9rem; font-size: 0.85rem; }
+  .hero-datos strong { font-size: 1.35rem; }
+  .tarjeta-pie { flex-direction: column; align-items: flex-start; }
+  .formulario { padding: 1.25rem 1rem; }
+}
+
+/* ---------- Teléfonos grandes (≥ 480px) ---------- */
+@media (min-width: 480px) {
+  .hero-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .formulario {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1.75rem;
+  }
+  .campo-completo { grid-column: 1 / -1; }
+}
+
+/* ---------- Tabletas (≥ 768px) ---------- */
+@media (min-width: 768px) {
+  .container { padding-inline: 2rem; }
+
+  .seccion { padding: 5rem 0; }
+
+  .hero { padding: 3.5rem 0 4.5rem; }
+  .hero-lead { font-size: 1.1rem; }
+  .hero-datos { gap: 2.5rem; }
+
+  /* Las tarjetas pasan a dos columnas con CSS Grid */
+  .productos { grid-template-columns: repeat(2, 1fr); }
+
+  .nosotros-grid { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .nosotros-figura { padding: 2rem; }
+
+  .experiencias-grid { grid-template-columns: repeat(2, 1fr); }
+  .experiencia:last-child { grid-column: 1 / -1; }
+
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .volver-arriba { right: 1.5rem; bottom: 1.5rem; }
+}
+
+/* ---------- Computadores (≥ 1024px) ---------- */
+@media (min-width: 1024px) {
+  :root { --alto-header: 84px; }
+
+  .site-header {
+    background-color: rgba(246, 239, 230, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* El menú hamburguesa se oculta y la navegación se muestra en línea con Flexbox */
+  .nav-toggle { display: none; }
+
+  .main-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: transparent;
+    transform: none;
+    visibility: visible;
+    box-shadow: none;
+  }
+
+  .nav-list { flex-direction: row; gap: 0.25rem; }
+
+  .nav-link {
+    position: relative;
+    padding: 0.5rem 0.85rem;
+    font-size: 0.95rem;
+    color: var(--color-texto);
+    border-bottom: none;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.85rem;
+    right: 0.85rem;
+    bottom: 0.2rem;
+    height: 2px;
+    background-color: var(--color-caramelo);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transicion);
+  }
+  .nav-link:hover,
+  .nav-link.activo { color: var(--color-espresso); }
+  .nav-link:hover::after,
+  .nav-link.activo::after { transform: scaleX(1); }
+
+  .pedido {
+    border-color: var(--color-arena);
+    color: var(--color-espresso);
+    background-color: var(--color-blanco);
+  }
+
+  body.menu-abierto { overflow: auto; }
+  body.menu-abierto::after { display: none; }
+
+  /* Hero en dos columnas con Grid */
+  .hero { padding: 4rem 0 5.5rem; }
+  .hero-grid { grid-template-columns: 1.05fr 0.95fr; gap: 3rem; }
+  .hero-text { text-align: left; }
+  .hero-lead { margin-inline: 0; }
+  .hero-actions { justify-content: flex-start; }
+  .hero-datos { justify-content: flex-start; }
+  .hero-datos li { align-items: flex-start; }
+  .hero-figura { max-width: none; }
+
+  .seccion { padding: 6rem 0; }
+
+  .nosotros-grid { grid-template-columns: 0.9fr 1.1fr; gap: 4.5rem; }
+
+  .productos { grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+
+  .experiencias-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+  .experiencia:last-child { grid-column: auto; }
+
+  .preguntas-grid { grid-template-columns: 0.8fr 1.2fr; gap: 4rem; align-items: start; }
+  .preguntas-grid .seccion-encabezado { position: sticky; top: calc(var(--alto-header) + 2rem); }
+
+  .reservas-grid { grid-template-columns: 0.85fr 1.15fr; gap: 4rem; align-items: center; }
+  .formulario { padding: 2.5rem; }
+
+  .footer-grid { grid-template-columns: 1.6fr 1fr 1.2fr 1fr; gap: 3rem; }
+  .footer-inferior { text-align: left; }
+}
+
+/* ---------- Pantallas amplias (≥ 1280px) ---------- */
+@media (min-width: 1280px) {
+  .container { padding-inline: 2.5rem; }
+  .hero-grid { gap: 5rem; }
+}
