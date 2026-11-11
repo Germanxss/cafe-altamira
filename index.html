@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Altamira: café de especialidad colombiano, panadería artesanal y experiencias de cata en Bogotá. Consulta el menú y reserva tu mesa.">
+  <meta name="author" content="German Andres Tirado Ariza">
+  <meta name="theme-color" content="#2b1d16">
+  <title>Café Altamira | Café de origen colombiano</title>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ===== Encabezado y navegación ===== -->
+  <header class="site-header" id="encabezado">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" aria-label="Café Altamira, ir al inicio">
+        <img src="img/logo.svg" alt="" width="44" height="44">
+        <span class="brand-text">
+          <strong>Café Altamira</strong>
+          <small>Café de origen</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link activo">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#menu" class="nav-link">Menú</a></li>
+          <li><a href="#experiencias" class="nav-link">Experiencias</a></li>
+          <li><a href="#preguntas" class="nav-link">Preguntas</a></li>
+          <li><a href="#reservas" class="nav-link">Reservas</a></li>
+        </ul>
+        <a href="#menu" class="pedido" aria-label="Productos en tu pedido">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M6 7h12l-1.2 11.2A2 2 0 0 1 14.8 20H9.2a2 2 0 0 1-2-1.8L6 7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 7V6a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          <span class="pedido-contador" id="contador-pedido">0</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== Sección principal (hero) ===== -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="etiqueta">Desde las montañas de Santander</p>
+          <h1 id="titulo-hero">Cada taza cuenta la historia de su <em>origen</em></h1>
+          <p class="hero-lead">Seleccionamos granos de pequeñas fincas colombianas, los tostamos en casa y los servimos con el cuidado que merecen. Ven a probar la diferencia.</p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primario">Ver el menú</a>
+            <a href="#reservas" class="btn btn-secundario">Reservar mesa</a>
+          </div>
+          <ul class="hero-datos">
+            <li><strong>12</strong><span>fincas aliadas</span></li>
+            <li><strong>100%</strong><span>arábica</span></li>
+            <li><strong>4.8</strong><span>puntaje de taza</span></li>
+          </ul>
+        </div>
+        <figure class="hero-figura">
+          <img src="img/hero.svg" alt="Ilustración de una taza de café humeante frente a montañas cafeteras" width="600" height="520">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Nosotros ===== -->
+    <section class="seccion nosotros" id="nosotros" aria-labelledby="titulo-nosotros">
+      <div class="container nosotros-grid">
+        <figure class="nosotros-figura">
+          <img src="img/nosotros.svg" alt="Rama de cafeto con hojas verdes y granos maduros" width="520" height="480" loading="lazy">
+        </figure>
+        <article class="nosotros-texto">
+          <p class="etiqueta">Nuestra historia</p>
+          <h2 id="titulo-nosotros">Del cafetal a tu mesa, sin intermediarios</h2>
+          <p>Café Altamira nació en 2019 como un pequeño tostador de barrio. Hoy trabajamos directamente con familias caficultoras de Santander, Huila y Nariño, pagando precios justos y apostando por procesos sostenibles.</p>
+          <p>Cada lote llega a nuestra tostadora en Bogotá, donde definimos un perfil que resalte sus notas naturales: frutos rojos, panela, cacao o cítricos, según la región.</p>
+          <ul class="lista-valores">
+            <li>
+              <span class="icono-valor" aria-hidden="true">01</span>
+              <div>
+                <h3>Comercio directo</h3>
+                <p>Conocemos a quienes cultivan cada grano.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icono-valor" aria-hidden="true">02</span>
+              <div>
+                <h3>Tostión fresca</h3>
+                <p>Tostamos cada semana en pequeños lotes.</p>
+              </div>
+            </li>
+            <li>
+              <span class="icono-valor" aria-hidden="true">03</span>
+              <div>
+                <h3>Panadería artesanal</h3>
+                <p>Masas de fermentación lenta hechas cada mañana.</p>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Menú ===== -->
+    <section class="seccion menu" id="menu" aria-labelledby="titulo-menu">
+      <div class="container">
+        <header class="seccion-encabezado">
+          <p class="etiqueta">Nuestra carta</p>
+          <h2 id="titulo-menu">Menú de la casa</h2>
+          <p>Filtra por categoría, conoce cada producto y agrégalo a tu pedido.</p>
+        </header>
+
+        <div class="filtros" role="group" aria-label="Filtrar productos por categoría">
+          <button type="button" class="filtro activo" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button type="button" class="filtro" data-filtro="calientes" aria-pressed="false">Bebidas calientes</button>
+          <button type="button" class="filtro" data-filtro="frias" aria-pressed="false">Bebidas frías</button>
+          <button type="button" class="filtro" data-filtro="panaderia" aria-pressed="false">Panadería</button>
+        </div>
+
+        <div class="productos" id="lista-productos">
+          <article class="tarjeta" data-categoria="calientes">
+            <div class="tarjeta-imagen">
+              <img src="img/espresso.svg" alt="Taza de espresso sobre su plato" width="400" height="300" loading="lazy">
+              <span class="tarjeta-etiqueta">Favorito</span>
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Espresso de origen</h3>
+              <p>Extracción corta e intensa con notas a panela y chocolate oscuro.</p>
+              <div class="tarjeta-detalle" id="detalle-1" hidden>
+                <p><strong>Origen:</strong> San Gil, Santander · <strong>Tamaño:</strong> 30 ml</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$6.500</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-1">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Espresso de origen">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="calientes">
+            <div class="tarjeta-imagen">
+              <img src="img/capuchino.svg" alt="Capuchino visto desde arriba con arte latte en forma de corazón" width="400" height="300" loading="lazy">
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Capuchino Altamira</h3>
+              <p>Espresso doble con leche texturizada y un toque de canela.</p>
+              <div class="tarjeta-detalle" id="detalle-2" hidden>
+                <p><strong>Origen:</strong> Pitalito, Huila · <strong>Tamaño:</strong> 240 ml</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$9.800</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-2">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Capuchino Altamira">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="frias">
+            <div class="tarjeta-imagen">
+              <img src="img/cold-brew.svg" alt="Vaso alto de cold brew con hielo y pajilla" width="400" height="300" loading="lazy">
+              <span class="tarjeta-etiqueta">Nuevo</span>
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Cold brew cítrico</h3>
+              <p>Infusión en frío por 18 horas, servida con hielo y piel de naranja.</p>
+              <div class="tarjeta-detalle" id="detalle-3" hidden>
+                <p><strong>Origen:</strong> La Unión, Nariño · <strong>Tamaño:</strong> 350 ml</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$11.500</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-3">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Cold brew cítrico">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="frias">
+            <div class="tarjeta-imagen">
+              <img src="img/frappe.svg" alt="Frappé de café con crema batida en vaso de vidrio" width="400" height="300" loading="lazy">
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Frappé de cacao</h3>
+              <p>Café, cacao santandereano y leche, batidos con hielo y crema.</p>
+              <div class="tarjeta-detalle" id="detalle-4" hidden>
+                <p><strong>Base:</strong> espresso doble · <strong>Tamaño:</strong> 400 ml</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$12.900</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-4">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Frappé de cacao">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="panaderia">
+            <div class="tarjeta-imagen">
+              <img src="img/croissant.svg" alt="Croissant dorado de mantequilla" width="400" height="300" loading="lazy">
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Croissant de mantequilla</h3>
+              <p>Hojaldre laminado a mano, crujiente por fuera y suave por dentro.</p>
+              <div class="tarjeta-detalle" id="detalle-5" hidden>
+                <p><strong>Horneado:</strong> cada mañana · <strong>Peso:</strong> 90 g</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$7.200</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-5">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Croissant de mantequilla">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="panaderia">
+            <div class="tarjeta-imagen">
+              <img src="img/torta.svg" alt="Porción de torta de chocolate con capas y una fresa" width="400" height="300" loading="lazy">
+              <span class="tarjeta-etiqueta">Favorito</span>
+            </div>
+            <div class="tarjeta-cuerpo">
+              <h3>Torta de chocolate</h3>
+              <p>Bizcocho húmedo de cacao al 70% con ganache y frutos rojos.</p>
+              <div class="tarjeta-detalle" id="detalle-6" hidden>
+                <p><strong>Ideal con:</strong> espresso de origen · <strong>Porción:</strong> 120 g</p>
+              </div>
+              <div class="tarjeta-pie">
+                <span class="precio">$10.500</span>
+                <div class="tarjeta-acciones">
+                  <button type="button" class="btn-texto ver-detalle" aria-expanded="false" aria-controls="detalle-6">Detalles</button>
+                  <button type="button" class="btn btn-pequeno agregar" data-producto="Torta de chocolate">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experiencias ===== -->
+    <section class="seccion experiencias" id="experiencias" aria-labelledby="titulo-experiencias">
+      <div class="container">
+        <header class="seccion-encabezado claro">
+          <p class="etiqueta">Más que una taza</p>
+          <h2 id="titulo-experiencias">Experiencias para amantes del café</h2>
+          <p>Aprende, prueba y comparte con nuestros baristas en sesiones para grupos pequeños.</p>
+        </header>
+        <div class="experiencias-grid">
+          <article class="experiencia">
+            <img src="img/icono-cata.svg" alt="" width="64" height="64" loading="lazy">
+            <h3>Cata guiada</h3>
+            <p>Compara tres orígenes colombianos y aprende a reconocer aromas, acidez y cuerpo.</p>
+            <p class="experiencia-dato">90 minutos · Sábados</p>
+          </article>
+          <article class="experiencia">
+            <img src="img/icono-metodos.svg" alt="" width="64" height="64" loading="lazy">
+            <h3>Taller de métodos</h3>
+            <p>Prepara tu café con V60, prensa francesa y Chemex, y llévate tu receta ideal.</p>
+            <p class="experiencia-dato">2 horas · Miércoles</p>
+          </article>
+          <article class="experiencia">
+            <img src="img/icono-eventos.svg" alt="" width="64" height="64" loading="lazy">
+            <h3>Eventos privados</h3>
+            <p>Celebra reuniones de trabajo o cumpleaños con barra de café y panadería a la medida.</p>
+            <p class="experiencia-dato">Desde 10 personas</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Preguntas frecuentes (sección desplegable) ===== -->
+    <section class="seccion preguntas" id="preguntas" aria-labelledby="titulo-preguntas">
+      <div class="container preguntas-grid">
+        <header class="seccion-encabezado izquierda">
+          <p class="etiqueta">Resolvemos tus dudas</p>
+          <h2 id="titulo-preguntas">Preguntas frecuentes</h2>
+          <p>Si no encuentras lo que buscas, escríbenos desde el formulario de reservas.</p>
+        </header>
+        <div class="acordeon">
+          <details class="acordeon-item" open>
+            <summary>¿Necesito reservar para visitarlos?</summary>
+            <p>No es obligatorio. La reserva te garantiza mesa en horas de alta afluencia, especialmente los fines de semana entre las 10:00 a. m. y las 2:00 p. m.</p>
+          </details>
+          <details class="acordeon-item">
+            <summary>¿Venden café en grano para llevar?</summary>
+            <p>Sí. Ofrecemos bolsas de 250 g y 500 g en grano o molido según tu método de preparación. Pregunta por el lote de la semana.</p>
+          </details>
+          <details class="acordeon-item">
+            <summary>¿Tienen opciones sin lactosa o veganas?</summary>
+            <p>Preparamos todas las bebidas con leche de almendras, avena o deslactosada sin costo adicional, y contamos con dos opciones de panadería vegana.</p>
+          </details>
+          <details class="acordeon-item">
+            <summary>¿Cuáles son los medios de pago?</summary>
+            <p>Aceptamos efectivo, tarjetas débito y crédito, transferencias y pagos con código QR.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservas (formulario) ===== -->
+    <section class="seccion reservas" id="reservas" aria-labelledby="titulo-reservas">
+      <div class="container reservas-grid">
+        <aside class="reservas-info">
+          <p class="etiqueta">Te esperamos</p>
+          <h2 id="titulo-reservas">Reserva tu mesa</h2>
+          <p>Completa el formulario y confirmaremos tu reserva por correo electrónico en menos de dos horas.</p>
+          <dl class="horario">
+            <div><dt>Lunes a viernes</dt><dd>7:00 a. m. – 8:00 p. m.</dd></div>
+            <div><dt>Sábados</dt><dd>8:00 a. m. – 9:00 p. m.</dd></div>
+            <div><dt>Domingos y festivos</dt><dd>9:00 a. m. – 6:00 p. m.</dd></div>
+          </dl>
+        </aside>
+
+        <form class="formulario" id="form-reserva" novalidate>
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="Ej. Laura Gómez" required minlength="3">
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" placeholder="tucorreo@ejemplo.com" required>
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="300 123 4567" required pattern="[0-9 ]{7,15}">
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="personas">Número de personas</label>
+            <select id="personas" name="personas" required>
+              <option value="">Selecciona</option>
+              <option value="1">1 persona</option>
+              <option value="2">2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="6">5 a 6 personas</option>
+              <option value="10">Grupo de 7 o más</option>
+            </select>
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo">
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" min="07:00" max="20:00" required>
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <div class="campo campo-completo">
+            <label for="mensaje">Comentarios <span class="opcional">(opcional)</span></label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos si celebras algo especial o si tienes alguna preferencia."></textarea>
+          </div>
+          <div class="campo campo-completo campo-check">
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Acepto el tratamiento de mis datos para gestionar la reserva.</label>
+            <span class="campo-error" aria-live="polite"></span>
+          </div>
+          <button type="submit" class="btn btn-primario btn-bloque campo-completo">Confirmar reserva</button>
+          <p class="form-exito" id="form-exito" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-marca" aria-label="Café Altamira">
+        <a href="#inicio" class="brand brand-claro">
+          <img src="img/logo.svg" alt="" width="40" height="40">
+          <span class="brand-text"><strong>Café Altamira</strong><small>Café de origen</small></span>
+        </a>
+        <p>Café de especialidad, panadería artesanal y un espacio para compartir en el corazón de Bogotá.</p>
+      </section>
+      <nav class="footer-nav" aria-label="Enlaces del pie de página">
+        <h2>Explora</h2>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#experiencias">Experiencias</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </nav>
+      <section class="footer-contacto" aria-labelledby="titulo-contacto">
+        <h2 id="titulo-contacto">Contacto</h2>
+        <address>
+          Calle 85 # 12-34, Bogotá D.C.<br>
+          <a href="tel:+576015550123">(601) 555 0123</a><br>
+          <a href="mailto:hola@cafealtamira.co">hola@cafealtamira.co</a>
+        </address>
+      </section>
+      <section class="footer-redes" aria-labelledby="titulo-redes">
+        <h2 id="titulo-redes">Síguenos</h2>
+        <ul class="redes">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          </a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v6h4v-6h3l1-4h-4V8.5c0-.3.2-.5.5-.5Z" fill="currentColor"/></svg>
+          </a></li>
+          <li><a href="https://wa.me/573001234567" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a4.5 4.5 0 0 1-2.3-2.3l.8-1-1-2L9 8.5Z" fill="currentColor"/></svg>
+          </a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-inferior">
+      <div class="container">
+        <p>&copy; <span id="anio">2026</span> Café Altamira. Proyecto académico desarrollado por German Andres Tirado Ariza.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="volver-arriba" id="volver-arriba" aria-label="Volver al inicio de la página">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

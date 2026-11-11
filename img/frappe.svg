@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="fr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c79a72"/><stop offset="1" stop-color="#8a5a36"/></linearGradient>
+    <clipPath id="copa"><path d="M148 104 H252 L240 264 H160Z"/></clipPath>
+  </defs>
+  <rect width="400" height="300" fill="#dbe4ec"/>
+  <circle cx="320" cy="70" r="76" fill="#e6edf3"/>
+  <rect y="250" width="400" height="50" fill="#c8d4df"/>
+  <ellipse cx="200" cy="266" rx="70" ry="10" fill="#2b1d16" opacity="0.15"/>
+  <rect x="214" y="10" width="12" height="130" rx="6" fill="#c8823a" transform="rotate(12 220 75)"/>
+  <rect x="214" y="10" width="12" height="130" rx="6" fill="none" stroke="#ffffff" stroke-width="3" stroke-dasharray="8 8" transform="rotate(12 220 75)"/>
+  <g clip-path="url(#copa)">
+    <rect x="140" y="104" width="120" height="170" fill="url(#fr)"/>
+    <path d="M150 150 C180 140 220 160 252 148" stroke="#5c3e2e" stroke-width="5" fill="none" opacity="0.6"/>
+    <path d="M150 196 C180 186 220 206 252 194" stroke="#5c3e2e" stroke-width="4" fill="none" opacity="0.4"/>
+    <rect x="154" y="104" width="14" height="170" fill="#ffffff" opacity="0.18"/>
+  </g>
+  <path d="M148 104 H252 L240 264 H160Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+  <g fill="#fffaf3">
+    <ellipse cx="200" cy="104" rx="58" ry="16"/>
+    <circle cx="170" cy="94" r="20"/><circle cx="200" cy="86" r="26"/><circle cx="230" cy="94" r="20"/>
+    <circle cx="190" cy="66" r="18"/><circle cx="212" cy="64" r="16"/><circle cx="201" cy="48" r="13"/>
+  </g>
+  <path d="M168 92 C184 80 196 100 210 84 C220 74 230 90 236 82 M182 66 C194 58 204 72 216 60" fill="none" stroke="#5c3e2e" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="201" cy="36" r="9" fill="#b3261e"/>
+  <path d="M201 28 q4 -8 10 -8" stroke="#4e6b3a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>

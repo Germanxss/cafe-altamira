@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="liq" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b3f20"/><stop offset="1" stop-color="#2b1608"/></linearGradient>
+    <clipPath id="vaso"><path d="M150 60 H250 L238 262 H162Z"/></clipPath>
+  </defs>
+  <rect width="400" height="300" fill="#f2d4b8"/>
+  <circle cx="80" cy="70" r="70" fill="#f6dfc9"/>
+  <rect y="250" width="400" height="50" fill="#e6c09d"/>
+  <ellipse cx="200" cy="266" rx="70" ry="10" fill="#2b1d16" opacity="0.18"/>
+  <rect x="226" y="18" width="10" height="150" rx="5" fill="#4e6b3a" transform="rotate(14 231 90)"/>
+  <g clip-path="url(#vaso)">
+    <rect x="140" y="94" width="120" height="180" fill="url(#liq)"/>
+    <rect x="164" y="100" width="34" height="32" rx="6" fill="#ffffff" opacity="0.35" transform="rotate(-12 181 116)"/>
+    <rect x="200" y="112" width="32" height="30" rx="6" fill="#ffffff" opacity="0.3" transform="rotate(16 216 127)"/>
+    <rect x="176" y="146" width="30" height="28" rx="6" fill="#ffffff" opacity="0.25" transform="rotate(8 191 160)"/>
+    <rect x="152" y="60" width="14" height="210" fill="#ffffff" opacity="0.14"/>
+  </g>
+  <path d="M150 60 H250 L238 262 H162Z" fill="#ffffff" opacity="0.18"/>
+  <path d="M150 60 H250 L238 262 H162Z" fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" opacity="0.9"/>
+  <g transform="translate(246 74) rotate(20)">
+    <path d="M0 0 a30 30 0 0 1 60 0Z" fill="#e8892f"/>
+    <path d="M6 0 a24 24 0 0 1 48 0Z" fill="#f6b45a"/>
+    <path d="M30 0 L30 -22 M30 0 L14 -16 M30 0 L46 -16" stroke="#e8892f" stroke-width="2"/>
+  </g>
+  <g transform="translate(320 240) rotate(20)"><ellipse rx="9" ry="13" fill="#4a3226"/><path d="M0 -11 c-4 4 -4 7 0 11 s4 7 0 11" fill="none" stroke="#2b1d16" stroke-width="2"/></g>
+</svg>

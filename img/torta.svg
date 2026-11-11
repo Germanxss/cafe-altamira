@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#f3d9d3"/>
+  <circle cx="330" cy="70" r="80" fill="#f8e6e1"/>
+  <ellipse cx="205" cy="246" rx="150" ry="28" fill="#2b1d16" opacity="0.14"/>
+  <ellipse cx="200" cy="236" rx="150" ry="30" fill="#ffffff"/>
+  <ellipse cx="200" cy="236" rx="110" ry="20" fill="#f4ede6"/>
+  <path d="M110 150 L200 112 L300 140 L210 186Z" fill="#3a2016"/>
+  <path d="M210 186 L300 140 V212 L210 240Z" fill="#5c3424"/>
+  <path d="M110 150 L210 186 V240 L110 206Z" fill="#6e3f2b"/>
+  <path d="M110 168 L210 204 M110 188 L210 222" stroke="#f1d4b8" stroke-width="5"/>
+  <path d="M210 204 L300 158 M210 222 L300 178" stroke="#e8c6a7" stroke-width="4"/>
+  <path d="M110 150 L200 112 L300 140 L210 186Z" fill="none" stroke="#2b1408" stroke-width="2"/>
+  <path d="M120 150 C130 160 136 152 142 162 C148 172 152 160 158 168" stroke="#2b1408" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <g transform="translate(205 126)">
+    <path d="M0 18 C-22 6 -18 -18 0 -14 C18 -18 22 6 0 18Z" fill="#c9302c"/>
+    <path d="M-8 -14 L0 -24 L8 -14 L0 -10Z" fill="#4e6b3a"/>
+    <g fill="#f6d36b"><circle cx="-6" cy="-2" r="1.6"/><circle cx="5" cy="-4" r="1.6"/><circle cx="0" cy="6" r="1.6"/><circle cx="-9" cy="6" r="1.4"/><circle cx="8" cy="5" r="1.4"/></g>
+  </g>
+  <g fill="#7a1d3a"><circle cx="300" cy="240" r="8"/><circle cx="314" cy="232" r="7"/><circle cx="310" cy="246" r="6"/></g>
+  <g fill="#c9302c"><circle cx="96" cy="236" r="8"/></g>
+</svg>
