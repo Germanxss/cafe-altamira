@@ -22,9 +22,12 @@ cafe-altamira/
 ├── img/                  Ilustraciones e íconos en formato SVG
 ├── fonts/                Tipografías Lora y Poppins (.woff2)
 └── docs/
-    ├── documentacion.pdf     Documentación del desarrollo
-    └── video-validacion.mp4  Video de validación en computador, tableta y móvil
+    └── documentacion.pdf     Documentación del desarrollo
 ```
+
+## Video de validación
+
+https://youtu.be/Ms65H5F-3Ms
 
 ## Tecnologías
 
